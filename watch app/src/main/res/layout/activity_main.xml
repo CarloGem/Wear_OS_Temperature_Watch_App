@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/boxInsetLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.7"
+    android:background="@drawable/monitoring"
+    tools:context=".MainActivity"
+    tools:deviceIds="wear">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="98dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="29dp"
+        android:text="COMPILA \n I CAMPI"
+        android:textColor="#ff8c00"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/editTextSurname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="80dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#006db0"
+        android:text="REPORT"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="75dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#4CAF50"
+        android:text="SEND"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="177dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="      Input Name"
+        android:inputType="textPersonName"
+        android:textColor="#ff8c00"
+        android:textColorHint="#ff8c00"
+        app:layout_constraintBottom_toTopOf="@+id/editTextSurname"
+        app:layout_constraintStart_toStartOf="@+id/editTextSurname"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editTextSurname"
+        android:layout_width="177dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="100dp"
+        android:ems="10"
+        android:hint="      Input Surname"
+        android:inputType="textPersonName"
+        android:textColor="#ff8c00"
+        android:textColorHint="#ff8c00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextCity" />
+
+    <EditText
+        android:id="@+id/editTextCity"
+        android:layout_width="177dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="      Input City"
+        android:inputType="textPersonName"
+        android:textColor="#ff8c00"
+        android:textColorHint="#ff8c00"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="8dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
