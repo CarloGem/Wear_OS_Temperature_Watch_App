@@ -1,9 +1,7 @@
 package com.example.myapplication;
 
 public class User {
-    private String name;
-    private String surname;
-    private String city;
+    private String name, surname, city;
 
     public String getSurname() {
         return surname;

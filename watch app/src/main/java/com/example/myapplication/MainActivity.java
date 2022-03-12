@@ -36,9 +36,7 @@ public class MainActivity extends Activity implements DataClient.OnDataChangedLi
     private SensorManager sensorManager;
     private Sensor mTemperatureSensor;
     private String sensorValue="DEFAULT";
-    private String name;
-    private String surname;
-    private String city;
+    private String name, surname, city;
     private String WEARABLE_DATA_PATH = "/wearable_data";
     private String tmpTemperature;
 
